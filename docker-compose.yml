@@ -1,0 +1,29 @@
+version: '3'
+services:
+  frontend:
+    container_name: za-frontend
+    build: ./zaquack
+    ports:
+      - "3000:3000"
+    links:
+      - backend
+
+  backend:
+    container_name: za-backend
+    build: ./za-backend
+    ports:
+      - "8000:8000"
+    links:
+      - database
+
+  database:
+    container_name: database
+    image: mysql:latest
+    restart: "no"
+    environment:
+      MYSQL_DATABASE: za_quack
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+      MYSQL_ROOT_PASSWORD: admin
+    ports:
+      - "3306:3306"
