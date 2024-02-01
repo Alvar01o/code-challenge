@@ -10,11 +10,12 @@ WORKDIR /var/www/html
 COPY composer.json composer.lock ./
 
 # Install PHP extensions and dependencies
-RUN apt-get -y install libsqlite3-dev libsqlite3-0 libonig-dev
+RUN apt-get -y install libsqlite3-dev libsqlite3-0 libonig-dev vim
 RUN docker-php-ext-install pdo_mysql 
 
 RUN docker-php-ext-install pdo_mysql \
     && a2enmod rewrite
+RUN a2enmod headers
 RUN docker-php-ext-install mysqli
 
 RUN apt-get -y install zlib1g-dev libzip-dev
@@ -57,6 +58,10 @@ RUN composer install --no-scripts --no-autoloader
 # Copy the rest of the application
 COPY . .
 
+COPY ./000-default.conf /etc/apache2/sites-available/000-default.conf
+
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 RUN chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
@@ -64,6 +69,5 @@ RUN chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 # Generate the autoloader and clear the cache
 RUN composer dump-autoload
 RUN php artisan cache:clear
-
 # Start the application
 CMD ["apache2-foreground"]

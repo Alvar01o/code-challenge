@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Television 8K',
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                 'price' => 270000,
-                'image' => 'http://127.0.0.1:8000/images/tv1.webp'
+                'image' => 'http://localhost/images/tv1.webp'
             ]
         );
         Products::create(
@@ -35,7 +35,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                 'name' => 'Tabbavision',
                 'price' => 250000,
-                'image' => 'http://127.0.0.1:8000/images/tv2.webp'
+                'image' => 'http://localhost/images/tv2.webp'
             ]
         );
         Products::create(
@@ -45,7 +45,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'labbadora',
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                 'price' => 345000,
-                'image' => 'http://127.0.0.1:8000/images/tv1.webp'
+                'image' => 'http://localhost/images/tv1.webp'
             ]
         );
         

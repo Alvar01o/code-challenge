@@ -12,14 +12,14 @@ services:
     container_name: za-backend
     build: ./za-backend
     ports:
-      - "8000:8000"
+      - "80:80"
     links:
       - database
 
   database:
     container_name: database
     image: mysql:latest
-    restart: "no"
+    restart: 'always'
     environment:
       MYSQL_DATABASE: za_quack
       MYSQL_USER: admin

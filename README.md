@@ -25,3 +25,16 @@
 ## api endpoints - 
 http://127.0.0.1:8000/api/products/
 http://127.0.0.1:8000/api/products/abba
+
+
+
+## pasos para la ejecucion
+1 - clonar repositorio 
+2 - ejecutar docker-compose up 
+3 - entrar en contenedor de backend
+    3.1 php artisan migrate
+    3.2 php artisan db:seed
+
+URL BACKEND: localhost (puerto 80)
+URL FRONTEND: localhost:3000
+MYSQL en puerto 3306
