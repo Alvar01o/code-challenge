@@ -45,7 +45,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'labbadora',
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                 'price' => 345000,
-                'image' => 'http://localhost/images/tv1.webp'
+                'image' => 'http://localhost/images/heladera1.webp'
             ]
         );
         
