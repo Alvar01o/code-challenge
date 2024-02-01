@@ -30,7 +30,7 @@ http://Localhost/api/products/abba
 
 ## Pasos para la ejecucion
  1. Clonar Repo
- 2. Ejecutar docker-compose up
+ 2. Ejecutar docker-compose up --build
  3. Entrar en contendor de backend y ejecutar migraciones y semillas
 
     php artisan migrate
