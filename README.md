@@ -1,4 +1,3 @@
-# code-challenge - https://acueducto.notion.site/Fullstack-Javascript-Developer-Senior-Reto-fc413d160eef4d618634dd8805d274fb
 
 ### Consideraciones
 
