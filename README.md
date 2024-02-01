@@ -39,3 +39,9 @@ http://Localhost/api/products/abba
 **URL BACKEND:** localhost (puerto 80) 
 **URL FRONTEND**: localhost:3000 
 **MYSQL** en puerto 3306
+
+
+Inclui el archivo .env para no tener problemas con la  conexion con la base de datos. 
+no Inclui pruebas automaticas automatizadas u otro tipo de pruebas
+Inclui el archivo peek.gif para una demostracion grafica.
+los descuentos por busqueda **palíndromo** se aplican el Archivo ProductResource. la interfaz lo interpreta y muestra un badge de descuento y la API retorna el precio con descuento.
