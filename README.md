@@ -24,6 +24,7 @@
 
 ## api endpoints - 
 http://localhost/api/products/
+
 http://Localhost/api/products/abba
 
 
