@@ -18,9 +18,6 @@
 - Unificar la solución propuesta en una imagen de Docker por repositorio para poder ser ejecutada en cualquier ambiente.
 - Archivo README.md con los pasos detallados de cómo ejecutar la solución en local, cualquier  abstracción  de  la  instalación como despliegue por docker-compose o skaffold serán bienvenidas.
 
-### Cosas para hacer
-- Pruebas unitarias automáticas, se considerará un plus cualquier otro tipo de pruebas.
-
 
 ## api endpoints - 
 http://localhost/api/products/
