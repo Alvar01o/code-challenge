@@ -31,7 +31,7 @@ http://Localhost/api/products/abba
  2. Ejecutar docker-compose up --build
  3. Entrar en contendor de backend y ejecutar migraciones y semillas
 
-    php artisan migrate
+    php artisan migrate &&
     php artisan db:seed
 
 
